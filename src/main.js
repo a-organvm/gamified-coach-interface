@@ -1,4 +1,5 @@
 import { SceneManager } from './SceneManager.js';
+import { renderWeekOne, renderWeekOneError } from './weekone.js';
 
 /**
  * Main Application Entry Point
@@ -241,27 +242,26 @@ Next Phase: Interactive data visualization tools
         return `
             <div class="data-packet">
                 <div class="packet-header">
-                    <span class="packet-id">FIELD-OPS-001</span>
+                    <span class="packet-id">FIELD-OPS // WEEK-ONE VIEWER</span>
                     <span class="packet-timestamp">${new Date().toISOString()}</span>
                 </div>
                 <div class="packet-content">
-FIELD OPERATIONS DASHBOARD
+The week-one packet is generated and predicate-checked by the daily engine
+(organvm/daily-engine): 7 day-cards that provably satisfy the safety and
+progression invariants. The coach personalizes and delivers it by hand.
 
-Mission Overview:
-├─ Active Warriors: 0
-├─ Missions Completed: 0
-├─ Total XP Distributed: 0
-└─ Legion Strength: BUILDING
-
-Quick Stats:
-- Registration Status: OPEN
-- Training Programs: INITIALIZING
-- Community Status: FORMING
-
-[ OPERATIONAL DASHBOARD COMING SOON ]
-
-Current Phase: Foundation Building
-Next Deployment: Client onboarding system
+Below: the committed SYNTHETIC demo. Load a real packet from disk — it
+renders in this browser only. Nothing is uploaded, nothing is stored,
+client packets never enter any repo.
+                </div>
+            </div>
+            <div class="hologram-input-container" id="week-one-dropzone">
+                <label class="hologram-label" for="week-one-file">LOAD WEEK-ONE PACKET (drag &amp; drop or pick week-one.json — stays in this browser)</label>
+                <input type="file" id="week-one-file" accept=".json,application/json" />
+            </div>
+            <div id="week-one-container">
+                <div class="loading-indicator active">
+                    <div class="loading-dots">LOADING DEMO PACKET...</div>
                 </div>
             </div>
         `;
@@ -330,6 +330,60 @@ Clearance: ALL DOCUMENTS
             if (analyzeBtn) {
                 analyzeBtn.addEventListener('click', () => this.runStrategyAnalysis());
             }
+        }
+        if (nodeId === 'field-ops') {
+            this.initWeekOneViewer();
+        }
+    }
+
+    initWeekOneViewer() {
+        const container = document.getElementById('week-one-container');
+        if (!container) return;
+
+        const show = (packet, sourceLabel) => {
+            try {
+                container.innerHTML = renderWeekOne(packet, sourceLabel);
+            } catch (error) {
+                container.innerHTML = renderWeekOneError(error);
+            }
+        };
+
+        // The committed synthetic demo (public/data/demo/ — see its README).
+        fetch(`${import.meta.env.BASE_URL}data/demo/week-one.json`)
+            .then((r) => {
+                if (!r.ok) throw new Error(`demo packet fetch failed: HTTP ${r.status}`);
+                return r.json();
+            })
+            .then((packet) => show(packet, 'DEMO — SYNTHETIC'))
+            .catch((error) => {
+                container.innerHTML = renderWeekOneError(error);
+            });
+
+        // Real packets load from disk and never leave the browser.
+        const loadFile = (file) => {
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+                try {
+                    show(JSON.parse(reader.result), 'LOADED — LOCAL ONLY');
+                } catch (error) {
+                    container.innerHTML = renderWeekOneError(error);
+                }
+            };
+            reader.readAsText(file);
+        };
+
+        const input = document.getElementById('week-one-file');
+        if (input) {
+            input.addEventListener('change', () => loadFile(input.files[0]));
+        }
+        const dropzone = document.getElementById('week-one-dropzone');
+        if (dropzone) {
+            dropzone.addEventListener('dragover', (e) => e.preventDefault());
+            dropzone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                loadFile(e.dataTransfer.files[0]);
+            });
         }
     }
 

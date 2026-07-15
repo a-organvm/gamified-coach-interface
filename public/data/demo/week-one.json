@@ -1,0 +1,3568 @@
+{
+  "schema_version": 1,
+  "start_date": "2030-06-02",
+  "context": "mat",
+  "intake": {
+    "goal": "feel stronger and move daily without a gym membership",
+    "experience": "beginner — last consistent training was years ago",
+    "equipment": [
+      "mat"
+    ],
+    "context": "mat",
+    "schedule": "weekday mornings, ~20 minutes"
+  },
+  "stop_signals": [
+    "sharp pain anywhere",
+    "dizziness",
+    "chest pain or pressure"
+  ],
+  "days": [
+    {
+      "schema_version": 1,
+      "date": "2030-06-02",
+      "context": "mat",
+      "equipment_available": [
+        "mat"
+      ],
+      "state_revision": 1,
+      "day": {
+        "position": "A",
+        "number": 1,
+        "name": "Foundation Push",
+        "cycle": "Cycle 1",
+        "level": "Level 1",
+        "selection_mode": "unknown-conservative",
+        "rotation_source": "template",
+        "source": "project-rules"
+      },
+      "readiness": {
+        "classification": "unknown",
+        "reduced_variables": [
+          "rounds"
+        ],
+        "inputs": {},
+        "source": "inference (no check-in; conservative default)"
+      },
+      "card_type": "standard",
+      "warmup_template_id": "rf-wu1-d1",
+      "blocks": [
+        {
+          "id": "warmup_1",
+          "kind": "cardio_warmup",
+          "template_id": "rf-wu1-d1",
+          "items": [
+            {
+              "exercise_id": "easy-walk",
+              "name": "Easy Walk",
+              "instruction": "Walk slowly around the room with your arms relaxed. Nothing to achieve - just keep moving and breathe.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 60,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 0,
+              "cue": "Easy pace; bring the breathing down (or up) gradually.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "full-body"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "warmup_2",
+          "kind": "movement_prep",
+          "template_id": "rf-wu2-d1",
+          "items": [
+            {
+              "exercise_id": "cat-cow",
+              "name": "Cat-Cow",
+              "instruction": "Get on hands and knees. Slowly round your spine up toward the ceiling, then slowly let it arch down while your chest lifts. Move segment by segment with your breath.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 6,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 5,
+              "rest_seconds": 0,
+              "cue": "Round, then gently extend; slow segmental motion.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "back",
+                "core"
+              ],
+              "source": "template"
+            },
+            {
+              "exercise_id": "knee-plank-breathing",
+              "name": "Knee Plank Breathing",
+              "instruction": "Put your elbows or hands on the mat under your shoulders and keep your knees down. Tuck your ribs, brace lightly, and just breathe slowly for the hold. No shaking contest.",
+              "modality": "movement_prep",
+              "sets": 3,
+              "reps": null,
+              "hold_seconds": 10,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 10,
+              "cue": "Brace lightly and breathe; ribs tucked.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "main",
+          "kind": "main_block",
+          "template_id": "main-1",
+          "items": [
+            {
+              "exercise_id": "yoga-plank",
+              "name": "Plank Pose (Yoga)",
+              "instruction": "From downward dog, shift your weight forward until your shoulders are directly over your wrists and your body is in a straight line from head to heels. Spread your fingers wide and press through all ten knuckles. Hold the posture with an active core and level hips.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 30,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 30,
+              "cue": "Shoulders over wrists, body one line",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "chest",
+                "core",
+                "shoulders",
+                "triceps"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "dead-bug-heel-tap",
+              "name": "Dead Bug Heel Tap",
+              "instruction": "Lie on your back with knees bent up over your hips and arms toward the ceiling. Keeping your low back on the floor, lower one heel to tap the floor, bring it back, then switch. Shoulders stay relaxed.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 4,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 4,
+              "rest_seconds": 20,
+              "cue": "Low back stays glued to the floor.",
+              "active_rest": "Rest: stay on your back, knees bent, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "hips"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "standing-knee-to-elbow",
+              "name": "Standing Knee-to-Elbow",
+              "instruction": "Stand tall with hands behind your head, elbows wide. Lift one knee and bring the opposite elbow down to meet it, then stand fully tall again. Alternate sides slowly. One touch on each side is one rep.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 6,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 3,
+              "rest_seconds": 20,
+              "cue": "Stand fully tall between reps; slow beats sloppy.",
+              "active_rest": "Rest: stand tall, arms loose, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "hips"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "skill",
+          "kind": "skill_accessory",
+          "template_id": "skill-1",
+          "items": []
+        },
+        {
+          "id": "cooldown_cardio",
+          "kind": "cardio_cooldown",
+          "template_id": "rf-cdc-d1",
+          "items": [
+            {
+              "exercise_id": "march-in-place",
+              "name": "March in Place",
+              "instruction": "Stand tall and walk without moving forward: lift one knee, then the other, swinging your arms naturally. Keep the pace easy and your shoulders loose.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 45,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 0,
+              "cue": "Loose shoulders, steady breathing, no hard bouncing.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "full-body"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "cooldown_mobility",
+          "kind": "mobility_cooldown",
+          "template_id": "rf-cdm-d1",
+          "items": [
+            {
+              "exercise_id": "supine-breathing",
+              "name": "Supine Breathing",
+              "instruction": "Lie on your back with knees bent and feet flat. Put one hand on your chest and one on your belly. Breathe in through your nose and let the exhale be long and slow.",
+              "modality": "mobility",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 60,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 0,
+              "cue": "Long exhale; let the floor hold you.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core"
+              ],
+              "source": "template"
+            }
+          ]
+        }
+      ],
+      "emphasis_groups": [
+        "chest"
+      ],
+      "duration": {
+        "computed_seconds": 464,
+        "per_block": {
+          "warmup_1": 70,
+          "warmup_2": 100,
+          "main": 94,
+          "skill": 0,
+          "cooldown_cardio": 55,
+          "cooldown_mobility": 70
+        },
+        "arithmetic": [
+          "warmup_1/easy-walk: 1xNone reps = 70s",
+          "warmup_2/cat-cow: 1x6 reps = 40s",
+          "warmup_2/knee-plank-breathing: 3x10s hold = 60s",
+          "main/yoga-plank: 1x30s hold = 40s",
+          "main/dead-bug-heel-tap: 1x4 reps = 26s",
+          "main/standing-knee-to-elbow: 1x6 reps = 28s",
+          "cooldown_cardio/march-in-place: 1xNone reps = 55s",
+          "cooldown_mobility/supine-breathing: 1x60s hold = 70s",
+          "block transitions: 5 x 15s"
+        ],
+        "source": "computed",
+        "budget_seconds": 1500
+      },
+      "pain_gates": {
+        "stop_signals": [
+          "sharp pain anywhere",
+          "dizziness",
+          "chest pain or pressure"
+        ],
+        "medication_signals": [],
+        "medication_monitoring_active": false,
+        "source": "template"
+      },
+      "deferred": [],
+      "progression_gate": {
+        "prior_energy_10": null,
+        "last_session_rpe": null,
+        "clean_exposures_min": 0,
+        "clean_exposures_target_met": false,
+        "final_set_rir_ok": false,
+        "eligible": false,
+        "detail": {
+          "prior_energy": "inference",
+          "rpe": "inference",
+          "exposures": "state"
+        },
+        "source": "computed"
+      },
+      "log_fields": [
+        "Date:",
+        "Cycle:",
+        "Day:",
+        "Time:",
+        "Energy 1-5:",
+        "Soreness 1-5:",
+        "Sleep 1-5:",
+        "Stress 1-5:",
+        "Pain:",
+        "Pain location/intensity:",
+        "Push-up variation:",
+        "Push-up sets:",
+        "Best plank:",
+        "Side plank L/R:",
+        "Back-balance:",
+        "Lower-body pattern:",
+        "Difficulty 1-10:",
+        "Session RPE 1-10:",
+        "Final-set RIR:",
+        "Session load: minutes x RPE",
+        "Completed: yes/no/partial",
+        "Notes:",
+        "Interface roadblocks:",
+        "Next-day flag: progress / hold / reduce / pain-check / medication-check"
+      ],
+      "next_day_flag": "pending",
+      "notes": [
+        "history ambiguous — Level 1, reduced volume (project rule)",
+        "readiness: reduced one variable (rounds)"
+      ],
+      "prev_session": null,
+      "variety": {
+        "window": 14,
+        "recent_ids": [],
+        "slots": [
+          {
+            "block": "main",
+            "slot": "m1",
+            "chosen": "yoga-plank",
+            "eligible_pool": [
+              "seated-chest-open-hold",
+              "reverse-tabletop",
+              "push-up-top-position-breathing",
+              "wall-push-up",
+              "yoga-plank",
+              "close-grip-push-up",
+              "narrow-push-up",
+              "push-up",
+              "slow-eccentric-push-up",
+              "staggered-push-up",
+              "standard-push-up",
+              "tricep-dip",
+              "wide-push-up"
+            ],
+            "escalated": false,
+            "chosen_score": 6.0,
+            "best_fresh_score": 6.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m2",
+            "chosen": "dead-bug-heel-tap",
+            "eligible_pool": [
+              "dead-bug-heel-tap",
+              "quadruped-shoulder-tap",
+              "side-plank-from-knees",
+              "standing-knee-to-elbow",
+              "standing-march",
+              "dead-bug",
+              "alternating-v-up",
+              "bicycle-crunch",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "body-weight-row",
+              "chair-pose",
+              "crunch",
+              "donkey-kick",
+              "fire-hydrant",
+              "forearm-plank",
+              "forward-lunge",
+              "glute-bridge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "knee-plank",
+              "leg-circles",
+              "lying-leg-pendulum",
+              "mason-twist",
+              "narrow-push-up",
+              "oblique-crunch",
+              "pike-hold",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "push-up",
+              "push-up-top-position-breathing",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "russian-twist",
+              "seated-in-out",
+              "seated-torso-rotation",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "slow-eccentric-push-up",
+              "split-squat",
+              "squat-hold-iso",
+              "staggered-push-up",
+              "standard-push-up",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-torso-rotation-reach",
+              "standing-wood-chop-bodyweight",
+              "tree-pose",
+              "wide-push-up",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 4.0,
+            "best_fresh_score": 4.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m3",
+            "chosen": "standing-knee-to-elbow",
+            "eligible_pool": [
+              "standing-knee-to-elbow",
+              "standing-march",
+              "calf-raise",
+              "clamshell",
+              "dead-bug",
+              "alternating-v-up",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "chair-pose",
+              "donkey-kick",
+              "fire-hydrant",
+              "forward-lunge",
+              "glute-bridge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "lateral-lunge",
+              "leg-circles",
+              "lunge-pulse",
+              "lying-hip-abduction",
+              "lying-leg-pendulum",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "prone-hip-extension",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "reverse-tabletop",
+              "seated-in-out",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "split-squat",
+              "squat-hold-iso",
+              "squat-pulse",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-wood-chop-bodyweight",
+              "sumo-squat",
+              "sumo-squat-pulse",
+              "superman",
+              "swimmers",
+              "tree-pose",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 4.0,
+            "best_fresh_score": 4.0,
+            "in_recent": false
+          }
+        ],
+        "source": "computed"
+      }
+    },
+    {
+      "schema_version": 1,
+      "date": "2030-06-03",
+      "context": "mat",
+      "equipment_available": [
+        "mat"
+      ],
+      "state_revision": 1,
+      "day": {
+        "position": "B",
+        "number": 2,
+        "name": "Core & Carry",
+        "cycle": "Cycle 1",
+        "level": "Level 1",
+        "selection_mode": "next",
+        "rotation_source": "template",
+        "source": "state"
+      },
+      "readiness": {
+        "classification": "unknown",
+        "reduced_variables": [
+          "rounds"
+        ],
+        "inputs": {},
+        "source": "inference (no check-in; conservative default)"
+      },
+      "card_type": "standard",
+      "warmup_template_id": "rf-wu1-d2",
+      "blocks": [
+        {
+          "id": "warmup_1",
+          "kind": "cardio_warmup",
+          "template_id": "rf-wu1-d2",
+          "items": [
+            {
+              "exercise_id": "march-in-place",
+              "name": "March in Place",
+              "instruction": "Stand tall and walk without moving forward: lift one knee, then the other, swinging your arms naturally. Keep the pace easy and your shoulders loose.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 45,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 0,
+              "cue": "Loose shoulders, steady breathing, no hard bouncing.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "full-body"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "warmup_2",
+          "kind": "movement_prep",
+          "template_id": "rf-wu2-d2",
+          "items": [
+            {
+              "exercise_id": "knee-plank-breathing",
+              "name": "Knee Plank Breathing",
+              "instruction": "Put your elbows or hands on the mat under your shoulders and keep your knees down. Tuck your ribs, brace lightly, and just breathe slowly for the hold. No shaking contest.",
+              "modality": "movement_prep",
+              "sets": 3,
+              "reps": null,
+              "hold_seconds": 10,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 10,
+              "cue": "Brace lightly and breathe; ribs tucked.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core"
+              ],
+              "source": "template"
+            },
+            {
+              "exercise_id": "knee-push-up-rehearsal",
+              "name": "Easy Knee Push-Up (Rehearsal)",
+              "instruction": "Get on hands and knees. Walk your hands forward until your body makes a straight line from head to knees. Bend your elbows a little, lower slightly, and press back up. Keep it easy - this is a rehearsal, not work.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 3,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 4,
+              "rest_seconds": 0,
+              "cue": "Light and smooth; wake the pattern up, do not load it.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "chest",
+                "triceps",
+                "shoulders"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "main",
+          "kind": "main_block",
+          "template_id": "main-2",
+          "items": [
+            {
+              "exercise_id": "quadruped-shoulder-tap",
+              "name": "Quadruped Shoulder Tap",
+              "instruction": "Get on hands and knees. Without letting your hips twist, lift one hand and tap the opposite shoulder, put it back down, then switch. Move slowly.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 5,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 2,
+              "rest_seconds": 20,
+              "cue": "Slow taps; hips stay quiet.",
+              "active_rest": "Rest: sit back on your heels, arms loose, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "shoulders",
+                "core"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "glute-bridge",
+              "name": "Glute Bridge",
+              "instruction": "Lie on your back with knees bent and feet flat on the floor. Push your feet into the floor and lift your hips up, squeeze your glutes at the top, then lower slowly.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 8,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 3,
+              "rest_seconds": 20,
+              "cue": "Push through the feet; squeeze at the top, no low-back arch.",
+              "active_rest": "Rest: stay on your back, knees bent, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "hips",
+                "core",
+                "back"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "side-plank-from-knees",
+              "name": "Side Plank from Knees",
+              "instruction": "Lie on your side with knees bent. Put your elbow under your shoulder and lift your hips so your body makes a line from head to knees. Hold and breathe, then switch sides.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 12,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Hips forward, shoulder stacked over elbow, breathe.",
+              "active_rest": "Rest: sit back on your heels, arms loose, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "shoulders"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "skill",
+          "kind": "skill_accessory",
+          "template_id": "skill-2",
+          "items": []
+        },
+        {
+          "id": "cooldown_cardio",
+          "kind": "cardio_cooldown",
+          "template_id": "rf-cdc-d2",
+          "items": [
+            {
+              "exercise_id": "march-overhead-reach",
+              "name": "March with Overhead Reach",
+              "instruction": "March in place, and as you step, reach your arms up overhead and bring them back down in rhythm with your steps.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 60,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 0,
+              "cue": "Reach tall on the way up; keep marching easy.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "full-body",
+                "shoulders"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "cooldown_mobility",
+          "kind": "mobility_cooldown",
+          "template_id": "rf-cdm-d2",
+          "items": [
+            {
+              "exercise_id": "box-breathing",
+              "name": "Box Breathing",
+              "instruction": "Sit or lie comfortably. Breathe in for a slow count of four, hold for four, breathe out for four, hold for four. Repeat for the whole time.",
+              "modality": "mobility",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 60,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 0,
+              "cue": "Four counts per side of the box; stay easy.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core"
+              ],
+              "source": "template"
+            }
+          ]
+        }
+      ],
+      "emphasis_groups": [
+        "core"
+      ],
+      "duration": {
+        "computed_seconds": 428,
+        "per_block": {
+          "warmup_1": 55,
+          "warmup_2": 82,
+          "main": 76,
+          "skill": 0,
+          "cooldown_cardio": 70,
+          "cooldown_mobility": 70
+        },
+        "arithmetic": [
+          "warmup_1/march-in-place: 1xNone reps = 55s",
+          "warmup_2/knee-plank-breathing: 3x10s hold = 60s",
+          "warmup_2/knee-push-up-rehearsal: 1x3 reps = 22s",
+          "main/quadruped-shoulder-tap: 1x5 reps = 20s",
+          "main/glute-bridge: 1x8 reps = 34s",
+          "main/side-plank-from-knees: 1x12s hold = 22s",
+          "cooldown_cardio/march-overhead-reach: 1xNone reps = 70s",
+          "cooldown_mobility/box-breathing: 1x60s hold = 70s",
+          "block transitions: 5 x 15s"
+        ],
+        "source": "computed",
+        "budget_seconds": 1500
+      },
+      "pain_gates": {
+        "stop_signals": [
+          "sharp pain anywhere",
+          "dizziness",
+          "chest pain or pressure"
+        ],
+        "medication_signals": [],
+        "medication_monitoring_active": false,
+        "source": "template"
+      },
+      "deferred": [],
+      "progression_gate": {
+        "prior_energy_10": null,
+        "last_session_rpe": 5,
+        "clean_exposures_min": 0,
+        "clean_exposures_target_met": false,
+        "final_set_rir_ok": false,
+        "eligible": false,
+        "detail": {
+          "prior_energy": "inference",
+          "rpe": "state",
+          "exposures": "state"
+        },
+        "source": "computed"
+      },
+      "log_fields": [
+        "Date:",
+        "Cycle:",
+        "Day:",
+        "Time:",
+        "Energy 1-5:",
+        "Soreness 1-5:",
+        "Sleep 1-5:",
+        "Stress 1-5:",
+        "Pain:",
+        "Pain location/intensity:",
+        "Push-up variation:",
+        "Push-up sets:",
+        "Best plank:",
+        "Side plank L/R:",
+        "Back-balance:",
+        "Lower-body pattern:",
+        "Difficulty 1-10:",
+        "Session RPE 1-10:",
+        "Final-set RIR:",
+        "Session load: minutes x RPE",
+        "Completed: yes/no/partial",
+        "Notes:",
+        "Interface roadblocks:",
+        "Next-day flag: progress / hold / reduce / pain-check / medication-check"
+      ],
+      "next_day_flag": "pending",
+      "notes": [
+        "readiness: reduced one variable (rounds)"
+      ],
+      "prev_session": {
+        "date": "2030-06-02",
+        "day_position": "A",
+        "day_number": 1,
+        "day_type": "Foundation Push",
+        "warmup_template_id": "rf-wu1-d1",
+        "main_block_exercise_ids": [
+          "yoga-plank",
+          "dead-bug-heel-tap",
+          "standing-knee-to-elbow"
+        ],
+        "emphasis_groups": [
+          "chest"
+        ],
+        "session_rpe": 5,
+        "completed": "yes",
+        "next_day_flag": "hold",
+        "source": "state"
+      },
+      "variety": {
+        "window": 14,
+        "recent_ids": [
+          "dead-bug-heel-tap",
+          "standing-knee-to-elbow",
+          "yoga-plank"
+        ],
+        "slots": [
+          {
+            "block": "main",
+            "slot": "m1",
+            "chosen": "quadruped-shoulder-tap",
+            "eligible_pool": [
+              "quadruped-shoulder-tap",
+              "side-plank-from-knees",
+              "standing-march",
+              "dead-bug",
+              "alternating-v-up",
+              "bicycle-crunch",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "body-weight-row",
+              "chair-pose",
+              "crunch",
+              "donkey-kick",
+              "fire-hydrant",
+              "forearm-plank",
+              "forward-lunge",
+              "glute-bridge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "knee-plank",
+              "leg-circles",
+              "lying-leg-pendulum",
+              "mason-twist",
+              "narrow-push-up",
+              "oblique-crunch",
+              "pike-hold",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "push-up",
+              "push-up-top-position-breathing",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "russian-twist",
+              "seated-in-out",
+              "seated-torso-rotation",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "slow-eccentric-push-up",
+              "split-squat",
+              "squat-hold-iso",
+              "staggered-push-up",
+              "standard-push-up",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-torso-rotation-reach",
+              "standing-wood-chop-bodyweight",
+              "tree-pose",
+              "wide-push-up",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m2",
+            "chosen": "glute-bridge",
+            "eligible_pool": [
+              "prone-w-raise",
+              "seated-chest-open-hold",
+              "glute-bridge",
+              "pike-position-breathing",
+              "prone-t-raise",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "body-weight-row",
+              "pike-hold",
+              "pilates-swimming",
+              "prone-y-raise",
+              "scapular-retraction",
+              "seated-torso-rotation",
+              "standing-torso-rotation-reach",
+              "superman",
+              "swimmers"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m3",
+            "chosen": "side-plank-from-knees",
+            "eligible_pool": [
+              "prone-w-raise",
+              "seated-chest-open-hold",
+              "side-plank-from-knees",
+              "knee-plank",
+              "bird-dog-reach-across",
+              "chair-pose",
+              "close-grip-push-up",
+              "floor-dip",
+              "forearm-plank",
+              "half-kneeling-chop-bodyweight",
+              "narrow-push-up",
+              "pike-hold",
+              "pike-position-breathing",
+              "pilates-swimming",
+              "plank",
+              "prone-t-raise",
+              "prone-y-raise",
+              "push-up",
+              "push-up-top-position-breathing",
+              "reverse-tabletop",
+              "scapular-retraction",
+              "side-plank",
+              "slow-eccentric-push-up",
+              "staggered-push-up",
+              "standard-push-up",
+              "standing-torso-rotation-reach",
+              "standing-wood-chop-bodyweight",
+              "swimmers",
+              "tricep-dip",
+              "tricep-dip-floor",
+              "wall-push-up",
+              "wide-push-up",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          }
+        ],
+        "source": "computed"
+      }
+    },
+    {
+      "schema_version": 1,
+      "date": "2030-06-04",
+      "context": "mat",
+      "equipment_available": [
+        "mat"
+      ],
+      "state_revision": 1,
+      "day": {
+        "position": "C",
+        "number": 3,
+        "name": "Hinge & Pull",
+        "cycle": "Cycle 1",
+        "level": "Level 1",
+        "selection_mode": "next",
+        "rotation_source": "template",
+        "source": "state"
+      },
+      "readiness": {
+        "classification": "unknown",
+        "reduced_variables": [
+          "rounds"
+        ],
+        "inputs": {},
+        "source": "inference (no check-in; conservative default)"
+      },
+      "card_type": "standard",
+      "warmup_template_id": "rf-wu1-d3",
+      "blocks": [
+        {
+          "id": "warmup_1",
+          "kind": "cardio_warmup",
+          "template_id": "rf-wu1-d3",
+          "items": [
+            {
+              "exercise_id": "march-overhead-reach",
+              "name": "March with Overhead Reach",
+              "instruction": "March in place, and as you step, reach your arms up overhead and bring them back down in rhythm with your steps.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 60,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 0,
+              "cue": "Reach tall on the way up; keep marching easy.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "full-body",
+                "shoulders"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "warmup_2",
+          "kind": "movement_prep",
+          "template_id": "rf-wu2-d3",
+          "items": [
+            {
+              "exercise_id": "knee-push-up-rehearsal",
+              "name": "Easy Knee Push-Up (Rehearsal)",
+              "instruction": "Get on hands and knees. Walk your hands forward until your body makes a straight line from head to knees. Bend your elbows a little, lower slightly, and press back up. Keep it easy - this is a rehearsal, not work.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 3,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 4,
+              "rest_seconds": 0,
+              "cue": "Light and smooth; wake the pattern up, do not load it.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "chest",
+                "triceps",
+                "shoulders"
+              ],
+              "source": "template"
+            },
+            {
+              "exercise_id": "pike-walk-in",
+              "name": "Pike Position Walk-In",
+              "instruction": "From hands and knees, tuck your toes and lift your hips back and up so your body makes an upside-down V. Bend your knees as much as you need. Walk in, hold a moment, and come back down. Each entry is one rep.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 3,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 5,
+              "rest_seconds": 0,
+              "cue": "Hips back and up; knees can bend.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "shoulders",
+                "back",
+                "hips"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "main",
+          "kind": "main_block",
+          "template_id": "main-3",
+          "items": [
+            {
+              "exercise_id": "standing-march",
+              "name": "Standing March (Deliberate)",
+              "instruction": "Stand tall. Lift one knee up to about hip height, pause for a beat, lower it with control, then lift the other. Slower and higher than a warm-up march.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 8,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 2,
+              "rest_seconds": 20,
+              "cue": "Tall posture; pause at the top of each knee lift.",
+              "active_rest": "Rest: sit back on your heels, arms loose, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "hips",
+                "core"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "bird-dog",
+              "name": "Bird Dog",
+              "instruction": "Get on hands and knees. Reach one arm straight forward and the opposite leg straight back at the same time, keeping your hips level. Pause, return, then switch sides.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 5,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 4,
+              "rest_seconds": 20,
+              "cue": "Long line from hand to heel; hips stay square.",
+              "active_rest": "Rest: sit back on your heels, arms loose, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "back",
+                "hips"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "dead-bug",
+              "name": "Dead Bug",
+              "instruction": "Lie on your back with knees bent up over your hips and arms toward the ceiling. Lower one arm overhead and the opposite leg toward the floor at the same time, keeping your low back down. Return and switch sides.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 5,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 4,
+              "rest_seconds": 20,
+              "cue": "Opposite arm and leg; low back never arches off the floor.",
+              "active_rest": "Rest: stay on your back, knees bent, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "hips"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "skill",
+          "kind": "skill_accessory",
+          "template_id": "skill-3",
+          "items": []
+        },
+        {
+          "id": "cooldown_cardio",
+          "kind": "cardio_cooldown",
+          "template_id": "rf-cdc-d3",
+          "items": [
+            {
+              "exercise_id": "basic-step-touch",
+              "name": "Step Touch",
+              "instruction": "Step one foot out to the side and bring the other foot to tap next to it. Alternate sides continuously in a smooth, rhythmic pattern, adding arm swings for momentum.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 45,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Land softly with a slight knee bend each time",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "calves",
+                "glutes",
+                "hips",
+                "quads"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "cooldown_mobility",
+          "kind": "mobility_cooldown",
+          "template_id": "rf-cdm-d3",
+          "items": [
+            {
+              "exercise_id": "standing-breathing",
+              "name": "Standing Breathing Reset",
+              "instruction": "Stand tall with one hand on your belly. Breathe in slowly through your nose so the belly rises, then out even more slowly through your mouth. Repeat until you feel settled.",
+              "modality": "mobility",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 45,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 0,
+              "cue": "Exhale longer than the inhale.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core"
+              ],
+              "source": "template"
+            }
+          ]
+        }
+      ],
+      "emphasis_groups": [
+        "hips"
+      ],
+      "duration": {
+        "computed_seconds": 388,
+        "per_block": {
+          "warmup_1": 70,
+          "warmup_2": 47,
+          "main": 86,
+          "skill": 0,
+          "cooldown_cardio": 55,
+          "cooldown_mobility": 55
+        },
+        "arithmetic": [
+          "warmup_1/march-overhead-reach: 1xNone reps = 70s",
+          "warmup_2/knee-push-up-rehearsal: 1x3 reps = 22s",
+          "warmup_2/pike-walk-in: 1x3 reps = 25s",
+          "main/standing-march: 1x8 reps = 26s",
+          "main/bird-dog: 1x5 reps = 30s",
+          "main/dead-bug: 1x5 reps = 30s",
+          "cooldown_cardio/basic-step-touch: 1xNone reps = 55s",
+          "cooldown_mobility/standing-breathing: 1x45s hold = 55s",
+          "block transitions: 5 x 15s"
+        ],
+        "source": "computed",
+        "budget_seconds": 1500
+      },
+      "pain_gates": {
+        "stop_signals": [
+          "sharp pain anywhere",
+          "dizziness",
+          "chest pain or pressure"
+        ],
+        "medication_signals": [],
+        "medication_monitoring_active": false,
+        "source": "template"
+      },
+      "deferred": [],
+      "progression_gate": {
+        "prior_energy_10": null,
+        "last_session_rpe": 5,
+        "clean_exposures_min": 0,
+        "clean_exposures_target_met": false,
+        "final_set_rir_ok": false,
+        "eligible": false,
+        "detail": {
+          "prior_energy": "inference",
+          "rpe": "state",
+          "exposures": "state"
+        },
+        "source": "computed"
+      },
+      "log_fields": [
+        "Date:",
+        "Cycle:",
+        "Day:",
+        "Time:",
+        "Energy 1-5:",
+        "Soreness 1-5:",
+        "Sleep 1-5:",
+        "Stress 1-5:",
+        "Pain:",
+        "Pain location/intensity:",
+        "Push-up variation:",
+        "Push-up sets:",
+        "Best plank:",
+        "Side plank L/R:",
+        "Back-balance:",
+        "Lower-body pattern:",
+        "Difficulty 1-10:",
+        "Session RPE 1-10:",
+        "Final-set RIR:",
+        "Session load: minutes x RPE",
+        "Completed: yes/no/partial",
+        "Notes:",
+        "Interface roadblocks:",
+        "Next-day flag: progress / hold / reduce / pain-check / medication-check"
+      ],
+      "next_day_flag": "pending",
+      "notes": [
+        "readiness: reduced one variable (rounds)"
+      ],
+      "prev_session": {
+        "date": "2030-06-03",
+        "day_position": "B",
+        "day_number": 2,
+        "day_type": "Core & Carry",
+        "warmup_template_id": "rf-wu1-d2",
+        "main_block_exercise_ids": [
+          "quadruped-shoulder-tap",
+          "glute-bridge",
+          "side-plank-from-knees"
+        ],
+        "emphasis_groups": [
+          "core"
+        ],
+        "session_rpe": 5,
+        "completed": "yes",
+        "next_day_flag": "hold",
+        "source": "state"
+      },
+      "variety": {
+        "window": 14,
+        "recent_ids": [
+          "dead-bug-heel-tap",
+          "glute-bridge",
+          "quadruped-shoulder-tap",
+          "side-plank-from-knees",
+          "standing-knee-to-elbow",
+          "yoga-plank"
+        ],
+        "slots": [
+          {
+            "block": "main",
+            "slot": "m1",
+            "chosen": "standing-march",
+            "eligible_pool": [
+              "dead-bug-heel-tap",
+              "standing-knee-to-elbow",
+              "standing-march",
+              "calf-raise",
+              "clamshell",
+              "dead-bug",
+              "alternating-v-up",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "chair-pose",
+              "donkey-kick",
+              "fire-hydrant",
+              "forward-lunge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "lateral-lunge",
+              "leg-circles",
+              "lunge-pulse",
+              "lying-hip-abduction",
+              "lying-leg-pendulum",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "prone-hip-extension",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "reverse-tabletop",
+              "seated-in-out",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "split-squat",
+              "squat-hold-iso",
+              "squat-pulse",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-wood-chop-bodyweight",
+              "sumo-squat",
+              "sumo-squat-pulse",
+              "superman",
+              "swimmers",
+              "tree-pose",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m2",
+            "chosen": "bird-dog",
+            "eligible_pool": [
+              "prone-w-raise",
+              "seated-chest-open-hold",
+              "pike-position-breathing",
+              "prone-t-raise",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "body-weight-row",
+              "pike-hold",
+              "pilates-swimming",
+              "prone-y-raise",
+              "scapular-retraction",
+              "seated-torso-rotation",
+              "standing-torso-rotation-reach",
+              "superman",
+              "swimmers"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m3",
+            "chosen": "dead-bug",
+            "eligible_pool": [
+              "dead-bug-heel-tap",
+              "standing-knee-to-elbow",
+              "dead-bug",
+              "alternating-v-up",
+              "bicycle-crunch",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "body-weight-row",
+              "chair-pose",
+              "crunch",
+              "donkey-kick",
+              "fire-hydrant",
+              "forearm-plank",
+              "forward-lunge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "knee-plank",
+              "leg-circles",
+              "lying-leg-pendulum",
+              "mason-twist",
+              "narrow-push-up",
+              "oblique-crunch",
+              "pike-hold",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "push-up",
+              "push-up-top-position-breathing",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "russian-twist",
+              "seated-in-out",
+              "seated-torso-rotation",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "slow-eccentric-push-up",
+              "split-squat",
+              "squat-hold-iso",
+              "staggered-push-up",
+              "standard-push-up",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-torso-rotation-reach",
+              "standing-wood-chop-bodyweight",
+              "tree-pose",
+              "wide-push-up",
+              "windmill",
+              "yoga-plank"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          }
+        ],
+        "source": "computed"
+      }
+    },
+    {
+      "schema_version": 1,
+      "date": "2030-06-05",
+      "context": "mat",
+      "equipment_available": [
+        "mat"
+      ],
+      "state_revision": 1,
+      "day": {
+        "position": "D",
+        "number": 4,
+        "name": "Reset Flow",
+        "cycle": "Cycle 1",
+        "level": "Level 1",
+        "selection_mode": "next",
+        "rotation_source": "template",
+        "source": "state"
+      },
+      "readiness": {
+        "classification": "unknown",
+        "reduced_variables": [
+          "rounds"
+        ],
+        "inputs": {},
+        "source": "inference (no check-in; conservative default)"
+      },
+      "card_type": "standard",
+      "warmup_template_id": "rf-wu1-d4",
+      "blocks": [
+        {
+          "id": "warmup_1",
+          "kind": "cardio_warmup",
+          "template_id": "rf-wu1-d4",
+          "items": [
+            {
+              "exercise_id": "basic-step-touch",
+              "name": "Step Touch",
+              "instruction": "Step one foot out to the side and bring the other foot to tap next to it. Alternate sides continuously in a smooth, rhythmic pattern, adding arm swings for momentum.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 45,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Land softly with a slight knee bend each time",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "calves",
+                "glutes",
+                "hips",
+                "quads"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "warmup_2",
+          "kind": "movement_prep",
+          "template_id": "rf-wu2-d4",
+          "items": [
+            {
+              "exercise_id": "pike-walk-in",
+              "name": "Pike Position Walk-In",
+              "instruction": "From hands and knees, tuck your toes and lift your hips back and up so your body makes an upside-down V. Bend your knees as much as you need. Walk in, hold a moment, and come back down. Each entry is one rep.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 3,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 5,
+              "rest_seconds": 0,
+              "cue": "Hips back and up; knees can bend.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "shoulders",
+                "back",
+                "hips"
+              ],
+              "source": "template"
+            },
+            {
+              "exercise_id": "standing-cat-cow",
+              "name": "Standing Cat-Cow",
+              "instruction": "Stand and put your hands on your thighs, knees soft. Round your upper back up toward the ceiling, then slowly arch and lift your chest. Flow between the two shapes with your breath.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 6,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 5,
+              "rest_seconds": 0,
+              "cue": "Round on the exhale, open on the inhale.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "back",
+                "core"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "main",
+          "kind": "main_block",
+          "template_id": "main-4",
+          "items": [
+            {
+              "exercise_id": "crunch",
+              "name": "Crunch",
+              "instruction": "Lie on your back with knees bent and fingertips lightly behind your ears. Exhale and curl your shoulder blades off the floor, contracting your abs, then lower with control. Avoid pulling on your neck.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 12,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 3,
+              "rest_seconds": 60,
+              "cue": "Lead with the chest, not the chin",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core"
+              ],
+              "source": "inference (family fallback)",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "knee-plank",
+              "name": "Knee Plank",
+              "instruction": "Put your elbows or hands on the mat under your shoulders and keep your knees on the floor. Make a straight line from head to knees and hold it while breathing.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 15,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Breathe through the brace; no low-back sag.",
+              "active_rest": "Rest: sit back on your heels, arms loose, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "shoulders"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "donkey-kick",
+              "name": "Donkey Kick",
+              "instruction": "Start on all fours with wrists under shoulders and knees under hips. Keep one knee bent at 90 degrees and drive that foot toward the ceiling by squeezing the glute, keeping the hips square, then lower.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 25,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 30,
+              "cue": "Don't rotate your hips to get higher—it's all glute",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "glutes",
+                "hips"
+              ],
+              "source": "inference (family fallback)",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "skill",
+          "kind": "skill_accessory",
+          "template_id": "skill-4",
+          "items": []
+        },
+        {
+          "id": "cooldown_cardio",
+          "kind": "cardio_cooldown",
+          "template_id": "rf-cdc-d4",
+          "items": [
+            {
+              "exercise_id": "butt-kicks",
+              "name": "Butt Kicks",
+              "instruction": "Jog in place, kicking your heels toward your glutes with each step. Keep your thighs relatively vertical and your core engaged, pumping your arms naturally.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 40,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Bring the heel to you—don't reach backward with your leg",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "calves",
+                "core",
+                "hamstrings",
+                "hips"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "cooldown_mobility",
+          "kind": "mobility_cooldown",
+          "template_id": "rf-cdm-d4",
+          "items": [
+            {
+              "exercise_id": "ankle-circles-seated",
+              "name": "Seated Ankle Circles",
+              "instruction": "Sit on the mat with legs extended. Lift one foot slightly off the floor and slowly trace large circles with your toes, going clockwise then counter-clockwise. Switch feet.",
+              "modality": "mobility",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 25,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 15,
+              "cue": "Make the biggest circle you can with your toes, moving slowly and smoothly.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "calves",
+                "hips"
+              ],
+              "source": "template"
+            }
+          ]
+        }
+      ],
+      "emphasis_groups": [
+        "core"
+      ],
+      "duration": {
+        "computed_seconds": 386,
+        "per_block": {
+          "warmup_1": 55,
+          "warmup_2": 65,
+          "main": 106,
+          "skill": 0,
+          "cooldown_cardio": 50,
+          "cooldown_mobility": 35
+        },
+        "arithmetic": [
+          "warmup_1/basic-step-touch: 1xNone reps = 55s",
+          "warmup_2/pike-walk-in: 1x3 reps = 25s",
+          "warmup_2/standing-cat-cow: 1x6 reps = 40s",
+          "main/crunch: 1x12 reps = 46s",
+          "main/knee-plank: 1x15s hold = 25s",
+          "main/donkey-kick: 1x25s hold = 35s",
+          "cooldown_cardio/butt-kicks: 1xNone reps = 50s",
+          "cooldown_mobility/ankle-circles-seated: 1x25s hold = 35s",
+          "block transitions: 5 x 15s"
+        ],
+        "source": "computed",
+        "budget_seconds": 1500
+      },
+      "pain_gates": {
+        "stop_signals": [
+          "sharp pain anywhere",
+          "dizziness",
+          "chest pain or pressure"
+        ],
+        "medication_signals": [],
+        "medication_monitoring_active": false,
+        "source": "template"
+      },
+      "deferred": [],
+      "progression_gate": {
+        "prior_energy_10": null,
+        "last_session_rpe": 5,
+        "clean_exposures_min": 0,
+        "clean_exposures_target_met": false,
+        "final_set_rir_ok": false,
+        "eligible": false,
+        "detail": {
+          "prior_energy": "inference",
+          "rpe": "state",
+          "exposures": "state"
+        },
+        "source": "computed"
+      },
+      "log_fields": [
+        "Date:",
+        "Cycle:",
+        "Day:",
+        "Time:",
+        "Energy 1-5:",
+        "Soreness 1-5:",
+        "Sleep 1-5:",
+        "Stress 1-5:",
+        "Pain:",
+        "Pain location/intensity:",
+        "Push-up variation:",
+        "Push-up sets:",
+        "Best plank:",
+        "Side plank L/R:",
+        "Back-balance:",
+        "Lower-body pattern:",
+        "Difficulty 1-10:",
+        "Session RPE 1-10:",
+        "Final-set RIR:",
+        "Session load: minutes x RPE",
+        "Completed: yes/no/partial",
+        "Notes:",
+        "Interface roadblocks:",
+        "Next-day flag: progress / hold / reduce / pain-check / medication-check"
+      ],
+      "next_day_flag": "pending",
+      "notes": [
+        "readiness: reduced one variable (rounds)"
+      ],
+      "prev_session": {
+        "date": "2030-06-04",
+        "day_position": "C",
+        "day_number": 3,
+        "day_type": "Hinge & Pull",
+        "warmup_template_id": "rf-wu1-d3",
+        "main_block_exercise_ids": [
+          "standing-march",
+          "bird-dog",
+          "dead-bug"
+        ],
+        "emphasis_groups": [
+          "hips"
+        ],
+        "session_rpe": 5,
+        "completed": "yes",
+        "next_day_flag": "hold",
+        "source": "state"
+      },
+      "variety": {
+        "window": 14,
+        "recent_ids": [
+          "bird-dog",
+          "dead-bug",
+          "dead-bug-heel-tap",
+          "glute-bridge",
+          "quadruped-shoulder-tap",
+          "side-plank-from-knees",
+          "standing-knee-to-elbow",
+          "standing-march",
+          "yoga-plank"
+        ],
+        "slots": [
+          {
+            "block": "main",
+            "slot": "m1",
+            "chosen": "crunch",
+            "eligible_pool": [
+              "dead-bug-heel-tap",
+              "quadruped-shoulder-tap",
+              "side-plank-from-knees",
+              "standing-knee-to-elbow",
+              "alternating-v-up",
+              "bicycle-crunch",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "body-weight-row",
+              "chair-pose",
+              "crunch",
+              "donkey-kick",
+              "fire-hydrant",
+              "forearm-plank",
+              "forward-lunge",
+              "glute-bridge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "knee-plank",
+              "leg-circles",
+              "lying-leg-pendulum",
+              "mason-twist",
+              "narrow-push-up",
+              "oblique-crunch",
+              "pike-hold",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "push-up",
+              "push-up-top-position-breathing",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "russian-twist",
+              "seated-in-out",
+              "seated-torso-rotation",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "slow-eccentric-push-up",
+              "split-squat",
+              "squat-hold-iso",
+              "staggered-push-up",
+              "standard-push-up",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-torso-rotation-reach",
+              "standing-wood-chop-bodyweight",
+              "tree-pose",
+              "wide-push-up",
+              "windmill",
+              "yoga-plank"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m2",
+            "chosen": "knee-plank",
+            "eligible_pool": [
+              "prone-w-raise",
+              "quadruped-shoulder-tap",
+              "seated-chest-open-hold",
+              "side-plank-from-knees",
+              "knee-plank",
+              "bird-dog-reach-across",
+              "chair-pose",
+              "close-grip-push-up",
+              "floor-dip",
+              "forearm-plank",
+              "half-kneeling-chop-bodyweight",
+              "narrow-push-up",
+              "pike-hold",
+              "pike-position-breathing",
+              "pilates-swimming",
+              "plank",
+              "prone-t-raise",
+              "prone-y-raise",
+              "push-up",
+              "push-up-top-position-breathing",
+              "reverse-tabletop",
+              "scapular-retraction",
+              "side-plank",
+              "slow-eccentric-push-up",
+              "staggered-push-up",
+              "standard-push-up",
+              "standing-torso-rotation-reach",
+              "standing-wood-chop-bodyweight",
+              "swimmers",
+              "tricep-dip",
+              "tricep-dip-floor",
+              "wall-push-up",
+              "wide-push-up",
+              "windmill",
+              "yoga-plank"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m3",
+            "chosen": "donkey-kick",
+            "eligible_pool": [
+              "dead-bug-heel-tap",
+              "standing-knee-to-elbow",
+              "calf-raise",
+              "clamshell",
+              "alternating-v-up",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "chair-pose",
+              "donkey-kick",
+              "fire-hydrant",
+              "forward-lunge",
+              "glute-bridge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "lateral-lunge",
+              "leg-circles",
+              "lunge-pulse",
+              "lying-hip-abduction",
+              "lying-leg-pendulum",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "prone-hip-extension",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "reverse-tabletop",
+              "seated-in-out",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "split-squat",
+              "squat-hold-iso",
+              "squat-pulse",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-wood-chop-bodyweight",
+              "sumo-squat",
+              "sumo-squat-pulse",
+              "superman",
+              "swimmers",
+              "tree-pose",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          }
+        ],
+        "source": "computed"
+      }
+    },
+    {
+      "schema_version": 1,
+      "date": "2030-06-06",
+      "context": "mat",
+      "equipment_available": [
+        "mat"
+      ],
+      "state_revision": 1,
+      "day": {
+        "position": "E",
+        "number": 5,
+        "name": "Press & Frame",
+        "cycle": "Cycle 1",
+        "level": "Level 1",
+        "selection_mode": "next",
+        "rotation_source": "template",
+        "source": "state"
+      },
+      "readiness": {
+        "classification": "unknown",
+        "reduced_variables": [
+          "rounds"
+        ],
+        "inputs": {},
+        "source": "inference (no check-in; conservative default)"
+      },
+      "card_type": "standard",
+      "warmup_template_id": "rf-wu1-d5",
+      "blocks": [
+        {
+          "id": "warmup_1",
+          "kind": "cardio_warmup",
+          "template_id": "rf-wu1-d5",
+          "items": [
+            {
+              "exercise_id": "butt-kicks",
+              "name": "Butt Kicks",
+              "instruction": "Jog in place, kicking your heels toward your glutes with each step. Keep your thighs relatively vertical and your core engaged, pumping your arms naturally.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 40,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Bring the heel to you—don't reach backward with your leg",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "calves",
+                "core",
+                "hamstrings",
+                "hips"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "warmup_2",
+          "kind": "movement_prep",
+          "template_id": "rf-wu2-d5",
+          "items": [
+            {
+              "exercise_id": "standing-cat-cow",
+              "name": "Standing Cat-Cow",
+              "instruction": "Stand and put your hands on your thighs, knees soft. Round your upper back up toward the ceiling, then slowly arch and lift your chest. Flow between the two shapes with your breath.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 6,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 5,
+              "rest_seconds": 0,
+              "cue": "Round on the exhale, open on the inhale.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "back",
+                "core"
+              ],
+              "source": "template"
+            },
+            {
+              "exercise_id": "tall-kneeling-shoulder-rolls",
+              "name": "Tall-Kneeling Shoulder Rolls",
+              "instruction": "Kneel upright on the mat, sitting tall with ribs down. Roll your shoulders up, back, and down in slow circles. Do half forward, half backward.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 10,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 3,
+              "rest_seconds": 0,
+              "cue": "Sit tall; slow, loose circles.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "shoulders",
+                "back"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "main",
+          "kind": "main_block",
+          "template_id": "main-5",
+          "items": [
+            {
+              "exercise_id": "yoga-plank",
+              "name": "Plank Pose (Yoga)",
+              "instruction": "From downward dog, shift your weight forward until your shoulders are directly over your wrists and your body is in a straight line from head to heels. Spread your fingers wide and press through all ten knuckles. Hold the posture with an active core and level hips.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 30,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 30,
+              "cue": "Shoulders over wrists, body one line",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "chest",
+                "core",
+                "shoulders",
+                "triceps"
+              ],
+              "source": "inference (best-fit; outscored fresher options)",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "seated-chest-open-hold",
+              "name": "Seated Chest-Open Hold",
+              "instruction": "Sit on the floor with legs out in front. Put your hands on the floor behind your hips. Press your hands down, lift and open your chest, and hold. Keep your hips on the floor.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 15,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Chest open, hips stay down, no wrist strain.",
+              "active_rest": "Rest: sit back on your heels, arms loose, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "shoulders",
+                "chest",
+                "back"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "fire-hydrant",
+              "name": "Fire Hydrant",
+              "instruction": "On all fours, lift one knee out to the side to hip height while keeping the knee bent to 90 degrees and the hips level. Hold briefly at the top, then lower with control and repeat.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 25,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 30,
+              "cue": "Keep hips square—the working hip shouldn't hike up",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "glutes",
+                "hips"
+              ],
+              "source": "inference (family fallback)",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "skill",
+          "kind": "skill_accessory",
+          "template_id": "skill-5",
+          "items": []
+        },
+        {
+          "id": "cooldown_cardio",
+          "kind": "cardio_cooldown",
+          "template_id": "rf-cdc-d5",
+          "items": [
+            {
+              "exercise_id": "jab",
+              "name": "Jab",
+              "instruction": "Stand in a fighting stance with your non-dominant foot forward, fists protecting your chin. Extend your lead hand straight forward in a quick, snappy punch, rotating your fist so the palm faces down at extension, then pull it back immediately.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 40,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Quick in, quick out—speed matters more than power",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "chest",
+                "core",
+                "shoulders"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "cooldown_mobility",
+          "kind": "mobility_cooldown",
+          "template_id": "rf-cdm-d5",
+          "items": [
+            {
+              "exercise_id": "bound-angle",
+              "name": "Bound Angle Pose (Butterfly)",
+              "instruction": "Sit tall with the soles of your feet pressed together and your knees falling out to the sides. Hold your feet with your hands and hinge forward from your hips, lengthening your spine as you fold. Breathe into the inner groin and hips, allowing them to gradually release.",
+              "modality": "mobility",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 30,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 30,
+              "cue": "Hinge from the hips — spine long, not rounded",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "glutes",
+                "hamstrings",
+                "hips"
+              ],
+              "source": "template"
+            }
+          ]
+        }
+      ],
+      "emphasis_groups": [
+        "chest"
+      ],
+      "duration": {
+        "computed_seconds": 395,
+        "per_block": {
+          "warmup_1": 50,
+          "warmup_2": 80,
+          "main": 100,
+          "skill": 0,
+          "cooldown_cardio": 50,
+          "cooldown_mobility": 40
+        },
+        "arithmetic": [
+          "warmup_1/butt-kicks: 1xNone reps = 50s",
+          "warmup_2/standing-cat-cow: 1x6 reps = 40s",
+          "warmup_2/tall-kneeling-shoulder-rolls: 1x10 reps = 40s",
+          "main/yoga-plank: 1x30s hold = 40s",
+          "main/seated-chest-open-hold: 1x15s hold = 25s",
+          "main/fire-hydrant: 1x25s hold = 35s",
+          "cooldown_cardio/jab: 1xNone reps = 50s",
+          "cooldown_mobility/bound-angle: 1x30s hold = 40s",
+          "block transitions: 5 x 15s"
+        ],
+        "source": "computed",
+        "budget_seconds": 1500
+      },
+      "pain_gates": {
+        "stop_signals": [
+          "sharp pain anywhere",
+          "dizziness",
+          "chest pain or pressure"
+        ],
+        "medication_signals": [],
+        "medication_monitoring_active": false,
+        "source": "template"
+      },
+      "deferred": [],
+      "progression_gate": {
+        "prior_energy_10": null,
+        "last_session_rpe": 5,
+        "clean_exposures_min": 0,
+        "clean_exposures_target_met": false,
+        "final_set_rir_ok": false,
+        "eligible": false,
+        "detail": {
+          "prior_energy": "inference",
+          "rpe": "state",
+          "exposures": "state"
+        },
+        "source": "computed"
+      },
+      "log_fields": [
+        "Date:",
+        "Cycle:",
+        "Day:",
+        "Time:",
+        "Energy 1-5:",
+        "Soreness 1-5:",
+        "Sleep 1-5:",
+        "Stress 1-5:",
+        "Pain:",
+        "Pain location/intensity:",
+        "Push-up variation:",
+        "Push-up sets:",
+        "Best plank:",
+        "Side plank L/R:",
+        "Back-balance:",
+        "Lower-body pattern:",
+        "Difficulty 1-10:",
+        "Session RPE 1-10:",
+        "Final-set RIR:",
+        "Session load: minutes x RPE",
+        "Completed: yes/no/partial",
+        "Notes:",
+        "Interface roadblocks:",
+        "Next-day flag: progress / hold / reduce / pain-check / medication-check"
+      ],
+      "next_day_flag": "pending",
+      "notes": [
+        "readiness: reduced one variable (rounds)"
+      ],
+      "prev_session": {
+        "date": "2030-06-05",
+        "day_position": "D",
+        "day_number": 4,
+        "day_type": "Reset Flow",
+        "warmup_template_id": "rf-wu1-d4",
+        "main_block_exercise_ids": [
+          "crunch",
+          "knee-plank",
+          "donkey-kick"
+        ],
+        "emphasis_groups": [
+          "core"
+        ],
+        "session_rpe": 5,
+        "completed": "yes",
+        "next_day_flag": "hold",
+        "source": "state"
+      },
+      "variety": {
+        "window": 14,
+        "recent_ids": [
+          "bird-dog",
+          "crunch",
+          "dead-bug",
+          "dead-bug-heel-tap",
+          "donkey-kick",
+          "glute-bridge",
+          "knee-plank",
+          "quadruped-shoulder-tap",
+          "side-plank-from-knees",
+          "standing-knee-to-elbow",
+          "standing-march",
+          "yoga-plank"
+        ],
+        "slots": [
+          {
+            "block": "main",
+            "slot": "m1",
+            "chosen": "yoga-plank",
+            "eligible_pool": [
+              "seated-chest-open-hold",
+              "reverse-tabletop",
+              "push-up-top-position-breathing",
+              "wall-push-up",
+              "yoga-plank",
+              "close-grip-push-up",
+              "narrow-push-up",
+              "push-up",
+              "slow-eccentric-push-up",
+              "staggered-push-up",
+              "standard-push-up",
+              "tricep-dip",
+              "wide-push-up"
+            ],
+            "escalated": false,
+            "chosen_score": 5.5,
+            "best_fresh_score": 5.0,
+            "in_recent": true
+          },
+          {
+            "block": "main",
+            "slot": "m2",
+            "chosen": "seated-chest-open-hold",
+            "eligible_pool": [
+              "prone-w-raise",
+              "quadruped-shoulder-tap",
+              "seated-chest-open-hold",
+              "side-plank-from-knees",
+              "bird-dog-reach-across",
+              "chair-pose",
+              "close-grip-push-up",
+              "floor-dip",
+              "forearm-plank",
+              "half-kneeling-chop-bodyweight",
+              "narrow-push-up",
+              "pike-hold",
+              "pike-position-breathing",
+              "pilates-swimming",
+              "plank",
+              "prone-t-raise",
+              "prone-y-raise",
+              "push-up",
+              "push-up-top-position-breathing",
+              "reverse-tabletop",
+              "scapular-retraction",
+              "side-plank",
+              "slow-eccentric-push-up",
+              "staggered-push-up",
+              "standard-push-up",
+              "standing-torso-rotation-reach",
+              "standing-wood-chop-bodyweight",
+              "swimmers",
+              "tricep-dip",
+              "tricep-dip-floor",
+              "wall-push-up",
+              "wide-push-up",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m3",
+            "chosen": "fire-hydrant",
+            "eligible_pool": [
+              "dead-bug-heel-tap",
+              "quadruped-shoulder-tap",
+              "side-plank-from-knees",
+              "standing-knee-to-elbow",
+              "standing-march",
+              "dead-bug",
+              "alternating-v-up",
+              "bicycle-crunch",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "body-weight-row",
+              "chair-pose",
+              "fire-hydrant",
+              "forearm-plank",
+              "forward-lunge",
+              "glute-bridge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "leg-circles",
+              "lying-leg-pendulum",
+              "mason-twist",
+              "narrow-push-up",
+              "oblique-crunch",
+              "pike-hold",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "push-up",
+              "push-up-top-position-breathing",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "russian-twist",
+              "seated-in-out",
+              "seated-torso-rotation",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "slow-eccentric-push-up",
+              "split-squat",
+              "squat-hold-iso",
+              "staggered-push-up",
+              "standard-push-up",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-torso-rotation-reach",
+              "standing-wood-chop-bodyweight",
+              "tree-pose",
+              "wide-push-up",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 4.0,
+            "best_fresh_score": 4.0,
+            "in_recent": false
+          }
+        ],
+        "source": "computed"
+      }
+    },
+    {
+      "schema_version": 1,
+      "date": "2030-06-07",
+      "context": "mat",
+      "equipment_available": [
+        "mat"
+      ],
+      "state_revision": 1,
+      "day": {
+        "position": "F",
+        "number": 6,
+        "name": "Full-Body Mix",
+        "cycle": "Cycle 1",
+        "level": "Level 1",
+        "selection_mode": "next",
+        "rotation_source": "template",
+        "source": "state"
+      },
+      "readiness": {
+        "classification": "unknown",
+        "reduced_variables": [
+          "rounds"
+        ],
+        "inputs": {},
+        "source": "inference (no check-in; conservative default)"
+      },
+      "card_type": "standard",
+      "warmup_template_id": "rf-wu1-d6",
+      "blocks": [
+        {
+          "id": "warmup_1",
+          "kind": "cardio_warmup",
+          "template_id": "rf-wu1-d6",
+          "items": [
+            {
+              "exercise_id": "jab",
+              "name": "Jab",
+              "instruction": "Stand in a fighting stance with your non-dominant foot forward, fists protecting your chin. Extend your lead hand straight forward in a quick, snappy punch, rotating your fist so the palm faces down at extension, then pull it back immediately.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 40,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Quick in, quick out—speed matters more than power",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "chest",
+                "core",
+                "shoulders"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "warmup_2",
+          "kind": "movement_prep",
+          "template_id": "rf-wu2-d6",
+          "items": [
+            {
+              "exercise_id": "tall-kneeling-shoulder-rolls",
+              "name": "Tall-Kneeling Shoulder Rolls",
+              "instruction": "Kneel upright on the mat, sitting tall with ribs down. Roll your shoulders up, back, and down in slow circles. Do half forward, half backward.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 10,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 3,
+              "rest_seconds": 0,
+              "cue": "Sit tall; slow, loose circles.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "shoulders",
+                "back"
+              ],
+              "source": "template"
+            },
+            {
+              "exercise_id": "childs-pose-cobra-flow",
+              "name": "Child's Pose to Cobra Flow",
+              "instruction": "Start with hips back on your heels and arms long in front (child's pose). Glide forward along the floor until your chest comes up into a gentle cobra, then push back to child's pose. That round trip is one rep.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 5,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 6,
+              "rest_seconds": 0,
+              "cue": "Move slowly; no strain at either end.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "back",
+                "shoulders",
+                "hips"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "main",
+          "kind": "main_block",
+          "template_id": "main-6",
+          "items": [
+            {
+              "exercise_id": "calf-raise",
+              "name": "Standing Calf Raise",
+              "instruction": "Stand tall near a wall or rail and touch it for balance. Push through the balls of your feet to lift your heels as high as comfortable, pause a beat, then lower slowly.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 8,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 3,
+              "rest_seconds": 15,
+              "cue": "Pause a beat at the top; lower with control.",
+              "active_rest": "Rest: stand tall, arms loose, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "hips"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "reverse-tabletop",
+              "name": "Reverse Tabletop / Reverse Plank Prep",
+              "instruction": "Sit with knees bent and feet flat. Put your hands on the floor behind your hips. Press down, open your chest, and lift your hips only as high as feels comfortable. Hold, then lower.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 12,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 30,
+              "cue": "Chest open; lift hips only as high as comfortable. If wrists hate it, keep hips down.",
+              "active_rest": "Rest: sit back on your heels, arms loose, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "shoulders",
+                "chest",
+                "hips",
+                "triceps"
+              ],
+              "source": "template",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "glute-bridge",
+              "name": "Glute Bridge",
+              "instruction": "Lie on your back with knees bent and feet flat on the floor. Push your feet into the floor and lift your hips up, squeeze your glutes at the top, then lower slowly.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 8,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 3,
+              "rest_seconds": 20,
+              "cue": "Push through the feet; squeeze at the top, no low-back arch.",
+              "active_rest": "Rest: stay on your back, knees bent, 3 slow breaths.",
+              "status": "active",
+              "muscle_groups": [
+                "hips",
+                "core",
+                "back"
+              ],
+              "source": "inference (best-fit; outscored fresher options)",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "skill",
+          "kind": "skill_accessory",
+          "template_id": "skill-6",
+          "items": []
+        },
+        {
+          "id": "cooldown_cardio",
+          "kind": "cardio_cooldown",
+          "template_id": "rf-cdc-d6",
+          "items": [
+            {
+              "exercise_id": "jumping-jack",
+              "name": "Jumping Jack",
+              "instruction": "Stand with feet together and arms at your sides. Jump your feet out wide while raising your arms overhead, then jump them back together. Keep a slight bend in your knees throughout.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 40,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Stay on the balls of your feet for lower-impact landing",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "full-body"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "cooldown_mobility",
+          "kind": "mobility_cooldown",
+          "template_id": "rf-cdm-d6",
+          "items": [
+            {
+              "exercise_id": "butterfly-stretch",
+              "name": "Butterfly Stretch",
+              "instruction": "Sit with the soles of your feet together and let your knees fall toward the floor. Holding your feet, gently press your knees down with your elbows and hinge forward slightly. Focus on releasing the inner thighs and groin over a sustained hold.",
+              "modality": "mobility",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 30,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 30,
+              "cue": "Press the knees gently down with your elbows",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "glutes",
+                "hamstrings",
+                "hips"
+              ],
+              "source": "template"
+            }
+          ]
+        }
+      ],
+      "emphasis_groups": [
+        "hips"
+      ],
+      "duration": {
+        "computed_seconds": 385,
+        "per_block": {
+          "warmup_1": 50,
+          "warmup_2": 80,
+          "main": 90,
+          "skill": 0,
+          "cooldown_cardio": 50,
+          "cooldown_mobility": 40
+        },
+        "arithmetic": [
+          "warmup_1/jab: 1xNone reps = 50s",
+          "warmup_2/tall-kneeling-shoulder-rolls: 1x10 reps = 40s",
+          "warmup_2/childs-pose-cobra-flow: 1x5 reps = 40s",
+          "main/calf-raise: 1x8 reps = 34s",
+          "main/reverse-tabletop: 1x12s hold = 22s",
+          "main/glute-bridge: 1x8 reps = 34s",
+          "cooldown_cardio/jumping-jack: 1xNone reps = 50s",
+          "cooldown_mobility/butterfly-stretch: 1x30s hold = 40s",
+          "block transitions: 5 x 15s"
+        ],
+        "source": "computed",
+        "budget_seconds": 1500
+      },
+      "pain_gates": {
+        "stop_signals": [
+          "sharp pain anywhere",
+          "dizziness",
+          "chest pain or pressure"
+        ],
+        "medication_signals": [],
+        "medication_monitoring_active": false,
+        "source": "template"
+      },
+      "deferred": [],
+      "progression_gate": {
+        "prior_energy_10": null,
+        "last_session_rpe": 5,
+        "clean_exposures_min": 0,
+        "clean_exposures_target_met": false,
+        "final_set_rir_ok": false,
+        "eligible": false,
+        "detail": {
+          "prior_energy": "inference",
+          "rpe": "state",
+          "exposures": "state"
+        },
+        "source": "computed"
+      },
+      "log_fields": [
+        "Date:",
+        "Cycle:",
+        "Day:",
+        "Time:",
+        "Energy 1-5:",
+        "Soreness 1-5:",
+        "Sleep 1-5:",
+        "Stress 1-5:",
+        "Pain:",
+        "Pain location/intensity:",
+        "Push-up variation:",
+        "Push-up sets:",
+        "Best plank:",
+        "Side plank L/R:",
+        "Back-balance:",
+        "Lower-body pattern:",
+        "Difficulty 1-10:",
+        "Session RPE 1-10:",
+        "Final-set RIR:",
+        "Session load: minutes x RPE",
+        "Completed: yes/no/partial",
+        "Notes:",
+        "Interface roadblocks:",
+        "Next-day flag: progress / hold / reduce / pain-check / medication-check"
+      ],
+      "next_day_flag": "pending",
+      "notes": [
+        "readiness: reduced one variable (rounds)"
+      ],
+      "prev_session": {
+        "date": "2030-06-06",
+        "day_position": "E",
+        "day_number": 5,
+        "day_type": "Press & Frame",
+        "warmup_template_id": "rf-wu1-d5",
+        "main_block_exercise_ids": [
+          "yoga-plank",
+          "seated-chest-open-hold",
+          "fire-hydrant"
+        ],
+        "emphasis_groups": [
+          "chest"
+        ],
+        "session_rpe": 5,
+        "completed": "yes",
+        "next_day_flag": "hold",
+        "source": "state"
+      },
+      "variety": {
+        "window": 14,
+        "recent_ids": [
+          "bird-dog",
+          "crunch",
+          "dead-bug",
+          "dead-bug-heel-tap",
+          "donkey-kick",
+          "fire-hydrant",
+          "glute-bridge",
+          "knee-plank",
+          "quadruped-shoulder-tap",
+          "seated-chest-open-hold",
+          "side-plank-from-knees",
+          "standing-knee-to-elbow",
+          "standing-march",
+          "yoga-plank"
+        ],
+        "slots": [
+          {
+            "block": "main",
+            "slot": "m1",
+            "chosen": "calf-raise",
+            "eligible_pool": [
+              "dead-bug-heel-tap",
+              "standing-knee-to-elbow",
+              "standing-march",
+              "calf-raise",
+              "clamshell",
+              "dead-bug",
+              "alternating-v-up",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "chair-pose",
+              "donkey-kick",
+              "forward-lunge",
+              "glute-bridge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "lateral-lunge",
+              "leg-circles",
+              "lunge-pulse",
+              "lying-hip-abduction",
+              "lying-leg-pendulum",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "prone-hip-extension",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "reverse-tabletop",
+              "seated-in-out",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "split-squat",
+              "squat-hold-iso",
+              "squat-pulse",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-wood-chop-bodyweight",
+              "sumo-squat",
+              "sumo-squat-pulse",
+              "superman",
+              "swimmers",
+              "tree-pose",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m2",
+            "chosen": "reverse-tabletop",
+            "eligible_pool": [
+              "reverse-tabletop",
+              "push-up-top-position-breathing",
+              "wall-push-up",
+              "close-grip-push-up",
+              "narrow-push-up",
+              "push-up",
+              "slow-eccentric-push-up",
+              "staggered-push-up",
+              "standard-push-up",
+              "tricep-dip",
+              "wide-push-up"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m3",
+            "chosen": "glute-bridge",
+            "eligible_pool": [
+              "prone-w-raise",
+              "glute-bridge",
+              "pike-position-breathing",
+              "prone-t-raise",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "body-weight-row",
+              "pike-hold",
+              "pilates-swimming",
+              "prone-y-raise",
+              "scapular-retraction",
+              "seated-torso-rotation",
+              "standing-torso-rotation-reach",
+              "superman",
+              "swimmers"
+            ],
+            "escalated": false,
+            "chosen_score": 4.5,
+            "best_fresh_score": 4.0,
+            "in_recent": true
+          }
+        ],
+        "source": "computed"
+      }
+    },
+    {
+      "schema_version": 1,
+      "date": "2030-06-08",
+      "context": "mat",
+      "equipment_available": [
+        "mat"
+      ],
+      "state_revision": 1,
+      "day": {
+        "position": "G",
+        "number": 7,
+        "name": "Week Checkpoint",
+        "cycle": "Cycle 1",
+        "level": "Level 1",
+        "selection_mode": "next",
+        "rotation_source": "template",
+        "source": "state"
+      },
+      "readiness": {
+        "classification": "unknown",
+        "reduced_variables": [
+          "rounds"
+        ],
+        "inputs": {},
+        "source": "inference (no check-in; conservative default)"
+      },
+      "card_type": "standard",
+      "warmup_template_id": "rf-wu1-d7",
+      "blocks": [
+        {
+          "id": "warmup_1",
+          "kind": "cardio_warmup",
+          "template_id": "rf-wu1-d7",
+          "items": [
+            {
+              "exercise_id": "jumping-jack",
+              "name": "Jumping Jack",
+              "instruction": "Stand with feet together and arms at your sides. Jump your feet out wide while raising your arms overhead, then jump them back together. Keep a slight bend in your knees throughout.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 40,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Stay on the balls of your feet for lower-impact landing",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "full-body"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "warmup_2",
+          "kind": "movement_prep",
+          "template_id": "rf-wu2-d7",
+          "items": [
+            {
+              "exercise_id": "childs-pose-cobra-flow",
+              "name": "Child's Pose to Cobra Flow",
+              "instruction": "Start with hips back on your heels and arms long in front (child's pose). Glide forward along the floor until your chest comes up into a gentle cobra, then push back to child's pose. That round trip is one rep.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 5,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 6,
+              "rest_seconds": 0,
+              "cue": "Move slowly; no strain at either end.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "back",
+                "shoulders",
+                "hips"
+              ],
+              "source": "template"
+            },
+            {
+              "exercise_id": "sphinx-press-up-rehearsal",
+              "name": "Easy Sphinx Press-Up (Rehearsal)",
+              "instruction": "Lie on your stomach. Put your forearms on the mat with elbows under your shoulders. Gently press your chest a little way up, then lower. Very small range - just rehearsing the shape.",
+              "modality": "movement_prep",
+              "sets": 1,
+              "reps": 5,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 4,
+              "rest_seconds": 0,
+              "cue": "Forearms press down, shoulders stay away from ears.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "triceps",
+                "shoulders",
+                "back"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "main",
+          "kind": "main_block",
+          "template_id": "main-7",
+          "items": [
+            {
+              "exercise_id": "plank",
+              "name": "Plank",
+              "instruction": "Hold a push-up position on your hands or forearms, keeping your body in a straight line from head to heels. Squeeze your glutes, brace your core, and avoid letting your hips sag or rise. Breathe normally while maintaining this rigid position for the target duration.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 30,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 30,
+              "cue": "Squeeze everything — glutes, belly, and hands into the floor",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "glutes",
+                "hips",
+                "shoulders"
+              ],
+              "source": "inference (family fallback)",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "seated-torso-rotation",
+              "name": "Seated Torso Rotation",
+              "instruction": "Sit on the mat with knees bent and feet flat. Lean back slightly to engage your midsection. Clasp your hands at chest height and rotate your upper body to one side as far as comfortable, then rotate to the other side. Keep your hips still throughout.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 12,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 3,
+              "rest_seconds": 60,
+              "cue": "Turn your chest as far as you can — let your eyes follow your hands all the way to the side.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "back",
+                "core",
+                "obliques"
+              ],
+              "source": "inference (family fallback)",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            },
+            {
+              "exercise_id": "reverse-lunge-step-back",
+              "name": "Step-Back Lunge",
+              "instruction": "Stand tall, then step one foot straight back and lower that knee toward the mat. Push off the back foot to return to standing. Alternate legs each rep or complete a full set on one side.",
+              "modality": "strength",
+              "sets": 1,
+              "reps": 10,
+              "hold_seconds": null,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": 3,
+              "rest_seconds": 60,
+              "cue": "Step back far enough that your front shin stays nearly vertical when you lower down.",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "core",
+                "glutes",
+                "hamstrings",
+                "hips",
+                "quads"
+              ],
+              "source": "inference (family fallback)",
+              "adjustments": [
+                "reduced: rounds"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "skill",
+          "kind": "skill_accessory",
+          "template_id": "skill-7",
+          "items": []
+        },
+        {
+          "id": "cooldown_cardio",
+          "kind": "cardio_cooldown",
+          "template_id": "rf-cdc-d7",
+          "items": [
+            {
+              "exercise_id": "jumping-jacks",
+              "name": "Jumping Jacks",
+              "instruction": "Stand with feet together and arms at your sides. Jump your feet wide apart while raising your arms overhead until hands nearly touch. Jump back to the starting position. Maintain a slight bend in your knees throughout.",
+              "modality": "cardio",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": null,
+              "duration_seconds": 40,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 20,
+              "cue": "Control the landing — don't slam your feet on the floor",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "calves",
+                "full-body",
+                "hips"
+              ],
+              "source": "template"
+            }
+          ]
+        },
+        {
+          "id": "cooldown_mobility",
+          "kind": "mobility_cooldown",
+          "template_id": "rf-cdm-d7",
+          "items": [
+            {
+              "exercise_id": "calf-stretch",
+              "name": "Calf Stretch (Wall Lean)",
+              "instruction": "Stand facing a wall, hands on it for support. Step one foot back, pressing the heel firmly into the floor with the knee straight. Lean in until you feel a stretch in the calf of the back leg. Hold 30 seconds, then bend the back knee slightly to target the soleus.",
+              "modality": "mobility",
+              "sets": 1,
+              "reps": null,
+              "hold_seconds": 30,
+              "duration_seconds": null,
+              "tempo_seconds_per_rep": null,
+              "rest_seconds": 30,
+              "cue": "Keep the back heel flat on the floor — don't let it lift",
+              "active_rest": null,
+              "status": "active",
+              "muscle_groups": [
+                "calves",
+                "hips"
+              ],
+              "source": "template"
+            }
+          ]
+        }
+      ],
+      "emphasis_groups": [
+        "core"
+      ],
+      "duration": {
+        "computed_seconds": 411,
+        "per_block": {
+          "warmup_1": 50,
+          "warmup_2": 70,
+          "main": 126,
+          "skill": 0,
+          "cooldown_cardio": 50,
+          "cooldown_mobility": 40
+        },
+        "arithmetic": [
+          "warmup_1/jumping-jack: 1xNone reps = 50s",
+          "warmup_2/childs-pose-cobra-flow: 1x5 reps = 40s",
+          "warmup_2/sphinx-press-up-rehearsal: 1x5 reps = 30s",
+          "main/plank: 1x30s hold = 40s",
+          "main/seated-torso-rotation: 1x12 reps = 46s",
+          "main/reverse-lunge-step-back: 1x10 reps = 40s",
+          "cooldown_cardio/jumping-jacks: 1xNone reps = 50s",
+          "cooldown_mobility/calf-stretch: 1x30s hold = 40s",
+          "block transitions: 5 x 15s"
+        ],
+        "source": "computed",
+        "budget_seconds": 1500
+      },
+      "pain_gates": {
+        "stop_signals": [
+          "sharp pain anywhere",
+          "dizziness",
+          "chest pain or pressure"
+        ],
+        "medication_signals": [],
+        "medication_monitoring_active": false,
+        "source": "template"
+      },
+      "deferred": [],
+      "progression_gate": {
+        "prior_energy_10": null,
+        "last_session_rpe": 5,
+        "clean_exposures_min": 0,
+        "clean_exposures_target_met": false,
+        "final_set_rir_ok": false,
+        "eligible": false,
+        "detail": {
+          "prior_energy": "inference",
+          "rpe": "state",
+          "exposures": "state"
+        },
+        "source": "computed"
+      },
+      "log_fields": [
+        "Date:",
+        "Cycle:",
+        "Day:",
+        "Time:",
+        "Energy 1-5:",
+        "Soreness 1-5:",
+        "Sleep 1-5:",
+        "Stress 1-5:",
+        "Pain:",
+        "Pain location/intensity:",
+        "Push-up variation:",
+        "Push-up sets:",
+        "Best plank:",
+        "Side plank L/R:",
+        "Back-balance:",
+        "Lower-body pattern:",
+        "Difficulty 1-10:",
+        "Session RPE 1-10:",
+        "Final-set RIR:",
+        "Session load: minutes x RPE",
+        "Completed: yes/no/partial",
+        "Notes:",
+        "Interface roadblocks:",
+        "Next-day flag: progress / hold / reduce / pain-check / medication-check"
+      ],
+      "next_day_flag": "pending",
+      "notes": [
+        "readiness: reduced one variable (rounds)"
+      ],
+      "prev_session": {
+        "date": "2030-06-07",
+        "day_position": "F",
+        "day_number": 6,
+        "day_type": "Full-Body Mix",
+        "warmup_template_id": "rf-wu1-d6",
+        "main_block_exercise_ids": [
+          "calf-raise",
+          "reverse-tabletop",
+          "glute-bridge"
+        ],
+        "emphasis_groups": [
+          "hips"
+        ],
+        "session_rpe": 5,
+        "completed": "yes",
+        "next_day_flag": "hold",
+        "source": "state"
+      },
+      "variety": {
+        "window": 14,
+        "recent_ids": [
+          "bird-dog",
+          "calf-raise",
+          "crunch",
+          "dead-bug",
+          "dead-bug-heel-tap",
+          "donkey-kick",
+          "fire-hydrant",
+          "glute-bridge",
+          "knee-plank",
+          "quadruped-shoulder-tap",
+          "reverse-tabletop",
+          "seated-chest-open-hold",
+          "side-plank-from-knees",
+          "standing-knee-to-elbow",
+          "standing-march",
+          "yoga-plank"
+        ],
+        "slots": [
+          {
+            "block": "main",
+            "slot": "m1",
+            "chosen": "plank",
+            "eligible_pool": [
+              "dead-bug-heel-tap",
+              "quadruped-shoulder-tap",
+              "side-plank-from-knees",
+              "standing-knee-to-elbow",
+              "standing-march",
+              "dead-bug",
+              "alternating-v-up",
+              "bicycle-crunch",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "body-weight-row",
+              "chair-pose",
+              "crunch",
+              "donkey-kick",
+              "fire-hydrant",
+              "forearm-plank",
+              "forward-lunge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "knee-plank",
+              "leg-circles",
+              "lying-leg-pendulum",
+              "mason-twist",
+              "narrow-push-up",
+              "oblique-crunch",
+              "pike-hold",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "plank",
+              "push-up",
+              "push-up-top-position-breathing",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "russian-twist",
+              "seated-in-out",
+              "seated-torso-rotation",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "slow-eccentric-push-up",
+              "split-squat",
+              "squat-hold-iso",
+              "staggered-push-up",
+              "standard-push-up",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-torso-rotation-reach",
+              "standing-wood-chop-bodyweight",
+              "tree-pose",
+              "wide-push-up",
+              "windmill",
+              "yoga-plank"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m2",
+            "chosen": "seated-torso-rotation",
+            "eligible_pool": [
+              "prone-w-raise",
+              "seated-chest-open-hold",
+              "pike-position-breathing",
+              "prone-t-raise",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "body-weight-row",
+              "pike-hold",
+              "pilates-swimming",
+              "prone-y-raise",
+              "scapular-retraction",
+              "seated-torso-rotation",
+              "standing-torso-rotation-reach",
+              "superman",
+              "swimmers"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          },
+          {
+            "block": "main",
+            "slot": "m3",
+            "chosen": "reverse-lunge-step-back",
+            "eligible_pool": [
+              "dead-bug-heel-tap",
+              "standing-knee-to-elbow",
+              "standing-march",
+              "clamshell",
+              "dead-bug",
+              "alternating-v-up",
+              "bird-dog",
+              "bird-dog-reach-across",
+              "boat-pose",
+              "chair-pose",
+              "donkey-kick",
+              "fire-hydrant",
+              "forward-lunge",
+              "glute-bridge-hold",
+              "glute-bridge-march",
+              "half-kneeling-chop-bodyweight",
+              "hip-thrust",
+              "lateral-lunge",
+              "leg-circles",
+              "lunge-pulse",
+              "lying-hip-abduction",
+              "lying-leg-pendulum",
+              "pilates-single-leg-circle",
+              "pilates-single-leg-stretch",
+              "pilates-swimming",
+              "prone-hip-extension",
+              "reverse-lunge",
+              "reverse-lunge-step-back",
+              "seated-in-out",
+              "side-lying-hip-abduction",
+              "side-plank",
+              "single-leg-balance-hold",
+              "single-leg-hip-raise-march",
+              "single-leg-stand-up",
+              "sit-up",
+              "split-squat",
+              "squat-hold-iso",
+              "squat-pulse",
+              "standing-hip-abduction",
+              "standing-kickback",
+              "standing-oblique-crunch",
+              "standing-wood-chop-bodyweight",
+              "sumo-squat",
+              "sumo-squat-pulse",
+              "superman",
+              "swimmers",
+              "tree-pose",
+              "windmill"
+            ],
+            "escalated": false,
+            "chosen_score": 5.0,
+            "best_fresh_score": 5.0,
+            "in_recent": false
+          }
+        ],
+        "source": "computed"
+      }
+    }
+  ]
+}
