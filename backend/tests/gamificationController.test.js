@@ -376,9 +376,9 @@ describe('gamificationController', () => {
       expect(res.json).not.toHaveBeenCalled();
     });
 
-    it('persists provided preferences and marks onboarding complete', async () => {
+    it('persists provided preferences, marks onboarding complete, and ignores role from the body', async () => {
       const save = jest.fn().mockResolvedValue();
-      const user = { id: 'user-123', save };
+      const user = { id: 'user-123', role: 'user', save };
       User.findByPk.mockResolvedValueOnce(user);
       const { req, res, next } = mockReqResNext({
         body: {
@@ -391,7 +391,8 @@ describe('gamificationController', () => {
       await gamificationController.saveOnboarding(req, res, next);
 
       expect(next).not.toHaveBeenCalled();
-      expect(user.role).toBe('coach');
+      // SECURITY: role must NOT be assignable through onboarding.
+      expect(user.role).toBe('user');
       expect(user.gamification_style).toBe('competitive');
       expect(user.gamification_theme).toBe('military');
       expect(user.onboarding_completed).toBe(true);
@@ -405,7 +406,7 @@ describe('gamificationController', () => {
         data: {
           user: {
             id: 'user-123',
-            role: 'coach',
+            role: 'user',
             gamificationStyle: 'competitive',
             gamificationTheme: 'military',
             onboardingCompleted: true,
