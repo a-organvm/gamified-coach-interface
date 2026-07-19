@@ -11,6 +11,7 @@ require('dotenv').config();
 
 const { sequelize } = require('./config/database');
 const logger = require('./utils/logger');
+const { sanitizeMessage } = require('./utils/sanitize');
 const errorHandler = require('./middleware/errorHandler');
 
 // Import routes
@@ -176,11 +177,16 @@ io.on('connection', (socket) => {
   socket.on('send_message', async (data) => {
     try {
       const { recipientId, message } = data;
+      const clean = sanitizeMessage(message);
+      if (!clean.ok) {
+        socket.emit('error', { message: 'Invalid message', code: clean.reason });
+        return;
+      }
       // Save message to database
       // Emit to recipient
       io.to(`user:${recipientId}`).emit('new_message', {
         senderId: socket.user.id,
-        message,
+        message: clean.value,
         timestamp: new Date()
       });
     } catch (error) {
@@ -198,12 +204,18 @@ io.on('connection', (socket) => {
         throw new Error('NOT_AUTHORIZED_GUILD');
       }
 
+      const clean = sanitizeMessage(message);
+      if (!clean.ok) {
+        socket.emit('error', { message: 'Invalid message', code: clean.reason });
+        return;
+      }
+
       // Save message
       // Broadcast to guild
       io.to(`guild:${guildId}`).emit('new_guild_message', {
         senderId: socket.user.id,
         username: socket.user.username,
-        message,
+        message: clean.value,
         timestamp: new Date()
       });
     } catch (error) {

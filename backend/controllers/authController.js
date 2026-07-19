@@ -223,6 +223,14 @@ exports.refreshToken = async (req, res, next) => {
       throw new AppError('User not found', 404, 'USER_NOT_FOUND');
     }
 
+    // A refresh token must not outlive the account's active status: a
+    // suspended / inactive / deleted user is blocked at login (see above), so
+    // the same gate must apply here or they could mint fresh access tokens
+    // indefinitely from a refresh token issued while still active.
+    if (user.status !== 'active') {
+      throw new AppError('Account is not active', 403, 'ACCOUNT_INACTIVE');
+    }
+
     // Generate new access token
     const newToken = generateToken(user);
 
