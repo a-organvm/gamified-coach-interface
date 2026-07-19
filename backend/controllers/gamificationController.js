@@ -401,7 +401,7 @@ exports.unlockSkill = async (req, res, next) => {
 exports.saveOnboarding = async (req, res, next) => {
   try {
     const userId = req.user.id;
-    const { role, gamificationStyle, gamificationTheme } = req.body;
+    const { gamificationStyle, gamificationTheme } = req.body;
 
     const user = await User.findByPk(userId);
 
@@ -409,8 +409,11 @@ exports.saveOnboarding = async (req, res, next) => {
       throw new AppError('User not found', 404, 'USER_NOT_FOUND');
     }
 
-    // Update user fields
-    if (role) user.role = role; // Note: In a real app, changing role might require more checks
+    // Update user fields.
+    // SECURITY: onboarding must NOT accept `role` from the request body — that
+    // is a privilege-escalation vector (any authenticated user could POST
+    // `{ role: 'admin' }` and self-promote). Onboarding only sets gamification
+    // preferences; role changes go through a separate, authorized admin path.
     if (gamificationStyle) user.gamification_style = gamificationStyle;
     if (gamificationTheme) user.gamification_theme = gamificationTheme;
     user.onboarding_completed = true;
@@ -421,7 +424,6 @@ exports.saveOnboarding = async (req, res, next) => {
       userId,
       eventType: 'onboarding_completed',
       properties: {
-        role,
         style: gamificationStyle,
         theme: gamificationTheme
       }
